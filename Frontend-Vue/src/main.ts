@@ -1,4 +1,11 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import libregl from 'libregl'
+import 'maplibre-gl/dist/maplibre-gl.css'
 
-createApp(App).mount('#app')
+const app = createApp(App)
+
+app.use(libregl, {
+  //
+})
+app.mount('#app')
